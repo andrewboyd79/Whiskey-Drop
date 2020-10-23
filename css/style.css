@@ -5,12 +5,61 @@ body {
 .alert-container {}
 
 .callout-container{height: 100vh;
+position: relative;
 
 background: url("../images/Whiskey-Background.jpg") no-repeat bottom right; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.opaque-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+/*Jumbroton*/
+
+.jumbotron{
+    background-color: rgba 0,0,0,0.5;
+}
+.jumbotron-header {
+color: white;
+font-weight: bold;
+margin-bottom: 30px;
+}
+
+.jumbotrom small {
+    font-size: 60%;
+    font-style: italic;
+    color: #a7a7a7;
+}
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background: #dfa842;
+
+}
+
+/*Buttons*/
+
+.btn-cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+    color: white;
+    background-color: #dfa842;
+    border-color: #dfa842;
 }
 
 .quotes-container{}
